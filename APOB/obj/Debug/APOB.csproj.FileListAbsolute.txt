@@ -1,0 +1,72 @@
+c:\users\paweł\documents\visual studio 2013\Projects\APOB\APOB\bin\Debug\APOB.exe.config
+c:\users\paweł\documents\visual studio 2013\Projects\APOB\APOB\obj\Debug\APOB.csprojResolveAssemblyReference.cache
+c:\users\paweł\documents\visual studio 2013\Projects\APOB\APOB\obj\Debug\APOB.MainWindow.resources
+c:\users\paweł\documents\visual studio 2013\Projects\APOB\APOB\obj\Debug\APOB.Properties.Resources.resources
+c:\users\paweł\documents\visual studio 2013\Projects\APOB\APOB\obj\Debug\APOB.csproj.GenerateResource.Cache
+c:\users\paweł\documents\visual studio 2013\Projects\APOB\APOB\bin\Debug\APOB.exe
+c:\users\paweł\documents\visual studio 2013\Projects\APOB\APOB\bin\Debug\APOB.pdb
+c:\users\paweł\documents\visual studio 2013\Projects\APOB\APOB\obj\Debug\APOB.exe
+c:\users\paweł\documents\visual studio 2013\Projects\APOB\APOB\obj\Debug\APOB.pdb
+c:\users\paweł\documents\visual studio 2013\Projects\APOB\APOB\obj\Debug\APOB.WImage.resources
+c:\users\paweł\documents\visual studio 2013\Projects\APOB\APOB\obj\Debug\APOB.about.resources
+C:\Users\Paweł\documents\visual studio 2013\Projects\APOB\APOB\obj\Debug\APOB.hist.resources
+D:\_profil_\OneDrive\APOB\APOB\bin\Debug\APOB.exe.config
+D:\_profil_\OneDrive\APOB\APOB\obj\Debug\APOB.exe
+D:\_profil_\OneDrive\APOB\APOB\obj\Debug\APOB.pdb
+D:\_profil_\OneDrive\APOB\APOB\bin\Debug\APOB.exe
+D:\_profil_\OneDrive\APOB\APOB\bin\Debug\APOB.pdb
+D:\_profil_\OneDrive\APOB\APOB\obj\Debug\APOB.csprojResolveAssemblyReference.cache
+D:\_profil_\OneDrive\APOB\APOB\obj\Debug\APOB.about.resources
+D:\_profil_\OneDrive\APOB\APOB\obj\Debug\APOB.hist.resources
+D:\_profil_\OneDrive\APOB\APOB\obj\Debug\APOB.MainWindow.resources
+D:\_profil_\OneDrive\APOB\APOB\obj\Debug\APOB.Properties.Resources.resources
+D:\_profil_\OneDrive\APOB\APOB\obj\Debug\APOB.WImage.resources
+D:\_profil_\OneDrive\APOB\APOB\obj\Debug\APOB.csproj.GenerateResource.Cache
+C:\Users\ptaszkie\Desktop\APOB\APOB\bin\Debug\APOB.exe.config
+C:\Users\ptaszkie\Desktop\APOB\APOB\obj\Debug\APOB.exe
+C:\Users\ptaszkie\Desktop\APOB\APOB\obj\Debug\APOB.pdb
+C:\Users\ptaszkie\Desktop\APOB\APOB\bin\Debug\APOB.exe
+C:\Users\ptaszkie\Desktop\APOB\APOB\bin\Debug\APOB.pdb
+C:\Users\ptaszkie\Desktop\APOB\APOB\obj\Debug\APOB.csprojResolveAssemblyReference.cache
+C:\Users\ptaszkie\Desktop\APOB\APOB\obj\Debug\APOB.about.resources
+C:\Users\ptaszkie\Desktop\APOB\APOB\obj\Debug\APOB.hist.resources
+C:\Users\ptaszkie\Desktop\APOB\APOB\obj\Debug\APOB.MainWindow.resources
+C:\Users\ptaszkie\Desktop\APOB\APOB\obj\Debug\APOB.Properties.Resources.resources
+C:\Users\ptaszkie\Desktop\APOB\APOB\obj\Debug\APOB.WImage.resources
+C:\Users\ptaszkie\Desktop\APOB\APOB\obj\Debug\APOB.csproj.GenerateResource.Cache
+D:\Inne\Csharp\APOB\APOB\APOB\bin\Debug\APOB.exe.config
+D:\Inne\Csharp\APOB\APOB\APOB\obj\Debug\APOB.exe
+D:\Inne\Csharp\APOB\APOB\APOB\obj\Debug\APOB.pdb
+D:\Inne\Csharp\APOB\APOB\APOB\bin\Debug\APOB.exe
+D:\Inne\Csharp\APOB\APOB\APOB\bin\Debug\APOB.pdb
+D:\Inne\Csharp\APOB\APOB\APOB\obj\Debug\APOB.csprojResolveAssemblyReference.cache
+D:\Inne\Csharp\APOB\APOB\APOB\obj\Debug\APOB.about.resources
+D:\Inne\Csharp\APOB\APOB\APOB\obj\Debug\APOB.hist.resources
+D:\Inne\Csharp\APOB\APOB\APOB\obj\Debug\APOB.MainWindow.resources
+D:\Inne\Csharp\APOB\APOB\APOB\obj\Debug\APOB.Properties.Resources.resources
+D:\Inne\Csharp\APOB\APOB\APOB\obj\Debug\APOB.WImage.resources
+D:\Inne\Csharp\APOB\APOB\APOB\obj\Debug\APOB.csproj.GenerateResource.Cache
+C:\Users\laendasill\Desktop\APOB\APOB\bin\Debug\APOB.exe.config
+C:\Users\laendasill\Desktop\APOB\APOB\obj\Debug\APOB.exe
+C:\Users\laendasill\Desktop\APOB\APOB\obj\Debug\APOB.pdb
+C:\Users\laendasill\Desktop\APOB\APOB\bin\Debug\APOB.exe
+C:\Users\laendasill\Desktop\APOB\APOB\bin\Debug\APOB.pdb
+C:\Users\laendasill\Desktop\APOB\APOB\obj\Debug\APOB.csprojResolveAssemblyReference.cache
+C:\Users\laendasill\Desktop\APOB\APOB\obj\Debug\APOB.about.resources
+C:\Users\laendasill\Desktop\APOB\APOB\obj\Debug\APOB.hist.resources
+C:\Users\laendasill\Desktop\APOB\APOB\obj\Debug\APOB.MainWindow.resources
+C:\Users\laendasill\Desktop\APOB\APOB\obj\Debug\APOB.Properties.Resources.resources
+C:\Users\laendasill\Desktop\APOB\APOB\obj\Debug\APOB.WImage.resources
+C:\Users\laendasill\Desktop\APOB\APOB\obj\Debug\APOB.csproj.GenerateResource.Cache
+C:\Users\binkaw\Downloads\APOB-Proj-master\APOB-Proj-master\APOB\bin\Debug\APOB.exe.config
+C:\Users\binkaw\Downloads\APOB-Proj-master\APOB-Proj-master\APOB\bin\Debug\APOB.exe
+C:\Users\binkaw\Downloads\APOB-Proj-master\APOB-Proj-master\APOB\bin\Debug\APOB.pdb
+C:\Users\binkaw\Downloads\APOB-Proj-master\APOB-Proj-master\APOB\obj\Debug\APOB.csprojResolveAssemblyReference.cache
+C:\Users\binkaw\Downloads\APOB-Proj-master\APOB-Proj-master\APOB\obj\Debug\APOB.about.resources
+C:\Users\binkaw\Downloads\APOB-Proj-master\APOB-Proj-master\APOB\obj\Debug\APOB.hist.resources
+C:\Users\binkaw\Downloads\APOB-Proj-master\APOB-Proj-master\APOB\obj\Debug\APOB.MainWindow.resources
+C:\Users\binkaw\Downloads\APOB-Proj-master\APOB-Proj-master\APOB\obj\Debug\APOB.Properties.Resources.resources
+C:\Users\binkaw\Downloads\APOB-Proj-master\APOB-Proj-master\APOB\obj\Debug\APOB.WImage.resources
+C:\Users\binkaw\Downloads\APOB-Proj-master\APOB-Proj-master\APOB\obj\Debug\APOB.csproj.GenerateResource.Cache
+C:\Users\binkaw\Downloads\APOB-Proj-master\APOB-Proj-master\APOB\obj\Debug\APOB.exe
+C:\Users\binkaw\Downloads\APOB-Proj-master\APOB-Proj-master\APOB\obj\Debug\APOB.pdb
