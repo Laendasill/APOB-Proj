@@ -59,6 +59,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="2pointOperations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2pointOperations.Designer.cs">
+      <DependentUpon>2pointOperations.cs</DependentUpon>
+    </Compile>
     <Compile Include="about.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     <Compile Include="WImage.Designer.cs">
       <DependentUpon>WImage.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="2pointOperations.resx">
+      <DependentUpon>2pointOperations.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="about.resx">
       <DependentUpon>about.cs</DependentUpon>
     </EmbeddedResource>
