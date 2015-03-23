@@ -12,6 +12,8 @@ namespace APOB
 {
     public partial class MainWindow : Form
     {
+        public List<WImage> WIList = new List<WImage>();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -28,6 +30,7 @@ namespace APOB
                 pom.Text = FileChoose.FileName;
                 pom.pictureBox1.Image = Image.FromFile(FileChoose.FileName);
                 pom.MdiParent = this;
+                WIList.Add(pom);
                 pom.Show();
             }
         }
@@ -61,11 +64,6 @@ namespace APOB
                 this.histogramToolStripMenuItem.Enabled = true;
             }
             else this.histogramToolStripMenuItem.Enabled = false;
-        }
-
-        private void MainWindow_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void operacjeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -164,6 +162,26 @@ namespace APOB
 
         }
 
+        private void duplikujToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.ActiveMdiChild is WImage)
+            {
+                WImage a = (WImage)this.ActiveMdiChild,
+                    b = new WImage(this);
+
+                b.Text = a.Text + " - Kopia";
+                b.pictureBox1.Image = new Bitmap(a.pictureBox1.Image);            
+                b.MdiParent = this;
+                WIList.Add(b);
+                b.Show();
+            }
+        }
+
+        private void operacjeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Operations2point w = new Operations2point(this);
+            w.ShowDialog();
+        }
     }
 }
 

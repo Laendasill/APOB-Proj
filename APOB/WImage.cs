@@ -47,5 +47,20 @@ namespace APOB
 
         }
 
+        private void WImage_Enter(object sender, EventArgs e)
+        {
+            parent.obrazToolStripMenuItem.Enabled = true;
+        }
+
+        private void WImage_Leave(object sender, EventArgs e)
+        {
+            parent.obrazToolStripMenuItem.Enabled = false;
+        }
+
+        private void WImage_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            parent.WIList.Remove(this);
+        }
+
     }
 }
