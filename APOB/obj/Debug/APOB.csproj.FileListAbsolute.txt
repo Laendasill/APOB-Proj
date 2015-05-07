@@ -96,3 +96,4 @@ D:\Inne\Csharp\APOB-Proj\APOB\obj\Debug\APOB.MainWindow.resources
 D:\Inne\Csharp\APOB-Proj\APOB\obj\Debug\APOB.Properties.Resources.resources
 D:\Inne\Csharp\APOB-Proj\APOB\obj\Debug\APOB.WImage.resources
 D:\Inne\Csharp\APOB-Proj\APOB\obj\Debug\APOB.csproj.GenerateResource.Cache
+D:\Inne\Csharp\APOB-Proj\APOB\obj\Debug\APOB.Slider.resources

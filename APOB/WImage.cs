@@ -59,11 +59,18 @@ namespace APOB
             this.pictureBox1.Image = image;
         }
 
-        public void progowanie()
+        public void progowanie(int prog)
         {
             Bitmap image = new Bitmap(this.pictureBox1.Image);
-           
-            int prog = 150;
+
+            if (prog < 0)
+            {
+                prog = 0;
+            }
+            if (prog > 255)
+            {
+                prog = 255;
+            }
             Color c;
             for (int x = 0; x < this.pictureBox1.Width - 1; x += 1)
                 for (int y = 0; y < this.pictureBox1.Height - 1; y += 1)

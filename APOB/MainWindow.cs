@@ -133,8 +133,10 @@ namespace APOB
         {
             if (this.ActiveMdiChild is WImage)
             {
-                WImage a = (WImage)this.ActiveMdiChild;
-                a.progowanie();
+                Slider f = new Slider((WImage)this.ActiveMdiChild);
+                f.Show();
+               // WImage a = (WImage)this.ActiveMdiChild;
+               // a.progowanie();
             }
 
         }
