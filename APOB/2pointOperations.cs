@@ -34,7 +34,7 @@ namespace APOB
             WImage a = parent.WIList.Find(WImage => WImage.Text==comboBox1.SelectedItem.ToString()),
                    b = parent.WIList.Find(WImage => WImage.Text==comboBox2.SelectedItem.ToString());
 
-            logOP((Bitmap)a.IBox.Image, (Bitmap)b.IBox.Image, operacja.SelectedItem.ToString());
+            logOP((Bitmap)a.pictureBox1.Image, (Bitmap)b.pictureBox1.Image, operacja.SelectedItem.ToString());
             this.Close();
         }
 
@@ -99,7 +99,12 @@ namespace APOB
                 }
             }
 
-            new WImage(parent,s,pom).Show();
+            WImage WIpom = new WImage(parent);
+            WIpom.pictureBox1.Image = pom;
+            WIpom.Text = "ADD";
+            parent.WIList.Add(WIpom);
+            WIpom.MdiParent = parent;
+            WIpom.Show();
         
         }
     }

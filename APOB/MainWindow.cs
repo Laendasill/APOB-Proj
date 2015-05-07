@@ -12,7 +12,6 @@ namespace APOB
 {
     public partial class MainWindow : Form
     {
-        // lista okien z obrazami
         public List<WImage> WIList = new List<WImage>();
 
         public MainWindow()
@@ -20,53 +19,76 @@ namespace APOB
             InitializeComponent();
         }
 
-        // pobranie ref. na okno z obrazem
-        private WImage GetWImage() 
-        {
-            if (this.ActiveMdiChild is WImage)
-            {
-                return (WImage)this.ActiveMdiChild;
-            }
-            return null;
-        }
-
         // Wczytanie obrazu
-        private void MOtworz_click(object sender, EventArgs e)
+        private void otwórzToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog FileChoose = new OpenFileDialog();
-            FileChoose.Filter = "Bitmap (*.bmp)|*.bmp|JPEG (*.jpg)|*.jpg|TIFF(*.tiff)|*.tiff";
+            FileChoose.Filter = "Bitmapa (*.bmp)|*.bmp";
             if (FileChoose.ShowDialog() == DialogResult.OK)
             {
-                Image im = new Bitmap(Image.FromFile(FileChoose.FileName));
-                //string s = FileChoose.FileName;
-                new WImage(this, FileChoose.FileName, im).Show();
+                WImage pom = new WImage(this);
+                pom.Text = FileChoose.FileName;
+                pom.pictureBox1.Image = Image.FromFile(FileChoose.FileName);
+                pom.MdiParent = this;
+                WIList.Add(pom);
+                pom.Show();
             }
         }
 
-        // Okienko z informacjami o tworcach
-        private void MAbout_click(object sender, EventArgs e)
+        // wyswietla informacje o programie i tworcach
+        private void oProgramieToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new about().ShowDialog();
+            about informacja = new about();
+            informacja.ShowDialog();
         }
 
         // utworzenie histogramu dla aktywnego okna z obrazem
-        private void MHistogram_click(object sender, EventArgs e)
+        private void histogramToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new WHistogram(this,GetWImage().IBox.Image).Show();
+            if (this.ActiveMdiChild is WImage)
+            {
+                WImage a = (WImage)this.ActiveMdiChild;
+                hist H = new hist(this,a);
+                H.MdiParent = this;
+                H.Show();
+            }
+
+
         }
 
-        // konwersja na skale szarosci
-        private void MGrayscale_Click(object sender, EventArgs e)
+        // ustawia czy dane opcje sa w aktualnej chwili dostepne
+        private void obrazToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            GetWImage().toGrayscale();
+            if (this.ActiveMdiChild is WImage)
+            {
+                this.histogramToolStripMenuItem.Enabled = true;
+            }
+            else this.histogramToolStripMenuItem.Enabled = false;
         }
 
+        private void operacjeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.ActiveMdiChild is WImage)
+            {
+                this.histogramToolStripMenuItem.Enabled = true;
+            }
+            else this.histogramToolStripMenuItem.Enabled = false;
+        }
+
+        private void skalaSzarościToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.ActiveMdiChild is WImage)
+            {
+                WImage a = (WImage)this.ActiveMdiChild;
+                a.toGrayscale();
+            }
+        }
         // Wyrównywanie 
         private void wyrównajtestToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (this.ActiveMdiChild is WHistogram)
+            if (this.ActiveMdiChild is hist)
             {
-                WHistogram a = (WHistogram)this.ActiveMdiChild;
+                hist a = (hist)this.ActiveMdiChild;
                
                 a.EqAvg();
             }
@@ -75,38 +97,38 @@ namespace APOB
 
         private void wyrównajLosowoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (this.ActiveMdiChild is WHistogram)
+            if (this.ActiveMdiChild is hist)
             {
-                WHistogram a = (WHistogram)this.ActiveMdiChild;
+                hist a = (hist)this.ActiveMdiChild;
                
+                
                 a.EqRnd();
+            }
+
+        }
+
+        private void wyrównajSąsiadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.ActiveMdiChild is hist)
+            {
+                hist a = (hist)this.ActiveMdiChild;
+
+                a.NeighAvg();
             }
 
         }
 
         private void wrównajWłasnaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (this.ActiveMdiChild is WHistogram)
+            if (this.ActiveMdiChild is hist)
             {
-                WHistogram a = (WHistogram)this.ActiveMdiChild;
+                hist a = (hist)this.ActiveMdiChild;
 
                 a.EqMy();
             }
 
         }
 
-        private void progowanieToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (this.ActiveMdiChild is WHistogram)
-            {
-                WHistogram a = (WHistogram)this.ActiveMdiChild;
-
-                a.progowanie();
-            }
-
-        }
-
-<<<<<<< HEAD
         private void progowanieToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (this.ActiveMdiChild is WImage)
@@ -116,40 +138,11 @@ namespace APOB
                // WImage a = (WImage)this.ActiveMdiChild;
                // a.progowanie();
             }
-=======
+
+        }
+
         private void redukcjaPoziomówSzarościToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (this.ActiveMdiChild is WHistogram)
-            {
-                WHistogram a = (WHistogram)this.ActiveMdiChild;
-
-                a.reductGrayScale();
-            }
-
-        }
-
-        // duplikowanie obrazu
-        private void MDuplikuj_click(object sender, EventArgs e)
-        {
-            new WImage(this, GetWImage().Text + "-Kopia", GetWImage().IBox.Image).Show();
-        }
-
-        private void operacjeToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            new Operations2point(this).ShowDialog();
-        }
-
->>>>>>> FETCH_HEAD
-
-        // wyrownanie histogramu metoda sasiedztwa
-        private void MHistogram_Sasiedztwo_Click(object sender, EventArgs e)
-        {
-            GetWImage().HistogramWyrownaj(1);
-        }
-
-        private void MErozja_Click(object sender, EventArgs e)
-        {
-<<<<<<< HEAD
             if (this.ActiveMdiChild is WImage)
             {
                
@@ -157,29 +150,28 @@ namespace APOB
                 a.Show();
                 
             }
-=======
-            GetWImage().erozja(true);
+
         }
 
-        private void MDylatacja_Click(object sender, EventArgs e)
+        private void duplikujToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            GetWImage().dylatacja(true);
-        }
->>>>>>> FETCH_HEAD
+            if (this.ActiveMdiChild is WImage)
+            {
+                WImage a = (WImage)this.ActiveMdiChild,
+                    b = new WImage(this);
 
-        private void MOtwarcie_Click(object sender, EventArgs e)
-        {
-            GetWImage().otwarcie(true);
+                b.Text = a.Text + " - Kopia";
+                b.pictureBox1.Image = new Bitmap(a.pictureBox1.Image);            
+                b.MdiParent = this;
+                WIList.Add(b);
+                b.Show();
+            }
         }
 
-        private void MZakmniecie_Click(object sender, EventArgs e)
+        private void operacjeToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            GetWImage().zamkniecie(true);
-        }
-
-        private void MNegacja_Click(object sender, EventArgs e)
-        {
-            GetWImage().negacja();
+            Operations2point w = new Operations2point(this);
+            w.ShowDialog();
         }
 
         private void negacjaToolStripMenuItem_Click_1(object sender, EventArgs e)

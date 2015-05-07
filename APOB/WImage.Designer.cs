@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.IBox = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.IBox)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // IBox
+            // pictureBox1
             // 
-            this.IBox.BackColor = System.Drawing.Color.White;
-            this.IBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.IBox.Location = new System.Drawing.Point(0, 0);
-            this.IBox.Margin = new System.Windows.Forms.Padding(2);
-            this.IBox.Name = "IBox";
-            this.IBox.Size = new System.Drawing.Size(50, 50);
-            this.IBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.IBox.TabIndex = 0;
-            this.IBox.TabStop = false;
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // WImage
             // 
@@ -51,16 +51,17 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(120, 66);
-            this.Controls.Add(this.IBox);
+            this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MinimumSize = new System.Drawing.Size(132, 105);
             this.Name = "WImage";
             this.ShowIcon = false;
             this.Text = "WImage";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.WImage_FormClosed);
+            this.Load += new System.EventHandler(this.WImage_Load);
             this.Enter += new System.EventHandler(this.WImage_Enter);
             this.Leave += new System.EventHandler(this.WImage_Leave);
-            ((System.ComponentModel.ISupportInitialize)(this.IBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -68,7 +69,7 @@
 
         #endregion
 
-        public System.Windows.Forms.PictureBox IBox;
+        public System.Windows.Forms.PictureBox pictureBox1;
 
     }
 }

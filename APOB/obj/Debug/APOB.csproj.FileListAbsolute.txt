@@ -83,7 +83,6 @@ D:\_profil_\Desktop\APOB-Proj-master\APOB\obj\Debug\APOB.Properties.Resources.re
 D:\_profil_\Desktop\APOB-Proj-master\APOB\obj\Debug\APOB.WImage.resources
 D:\_profil_\Desktop\APOB-Proj-master\APOB\obj\Debug\APOB.csproj.GenerateResource.Cache
 D:\_profil_\Desktop\APOB-Proj-master\APOB\obj\Debug\APOB.Operations2point.resources
-<<<<<<< HEAD
 D:\Inne\Csharp\APOB-Proj\APOB\bin\Debug\APOB.exe.config
 D:\Inne\Csharp\APOB-Proj\APOB\obj\Debug\APOB.exe
 D:\Inne\Csharp\APOB-Proj\APOB\obj\Debug\APOB.pdb
@@ -99,31 +98,3 @@ D:\Inne\Csharp\APOB-Proj\APOB\obj\Debug\APOB.WImage.resources
 D:\Inne\Csharp\APOB-Proj\APOB\obj\Debug\APOB.csproj.GenerateResource.Cache
 D:\Inne\Csharp\APOB-Proj\APOB\obj\Debug\APOB.Slider.resources
 D:\Inne\Csharp\APOB-Proj\APOB\obj\Debug\APOB.Posterize.resources
-=======
-D:\GitHub\APOB-Proj\APOB\bin\Debug\APOB.exe.config
-D:\GitHub\APOB-Proj\APOB\obj\Debug\APOB.exe
-D:\GitHub\APOB-Proj\APOB\obj\Debug\APOB.pdb
-D:\GitHub\APOB-Proj\APOB\bin\Debug\APOB.exe
-D:\GitHub\APOB-Proj\APOB\bin\Debug\APOB.pdb
-D:\GitHub\APOB-Proj\APOB\obj\Debug\APOB.csprojResolveAssemblyReference.cache
-D:\GitHub\APOB-Proj\APOB\obj\Debug\APOB.Operations2point.resources
-D:\GitHub\APOB-Proj\APOB\obj\Debug\APOB.about.resources
-D:\GitHub\APOB-Proj\APOB\obj\Debug\APOB.MainWindow.resources
-D:\GitHub\APOB-Proj\APOB\obj\Debug\APOB.Properties.Resources.resources
-D:\GitHub\APOB-Proj\APOB\obj\Debug\APOB.WImage.resources
-D:\GitHub\APOB-Proj\APOB\obj\Debug\APOB.csproj.GenerateResource.Cache
-D:\GitHub\APOB-Proj\APOB\obj\Debug\APOB.WHistogram.resources
-C:\Users\ptaszkie\Desktop\APOB-Proj\APOB\bin\Debug\APOB.exe.config
-C:\Users\ptaszkie\Desktop\APOB-Proj\APOB\obj\Debug\APOB.exe
-C:\Users\ptaszkie\Desktop\APOB-Proj\APOB\obj\Debug\APOB.pdb
-C:\Users\ptaszkie\Desktop\APOB-Proj\APOB\bin\Debug\APOB.exe
-C:\Users\ptaszkie\Desktop\APOB-Proj\APOB\bin\Debug\APOB.pdb
-C:\Users\ptaszkie\Desktop\APOB-Proj\APOB\obj\Debug\APOB.csprojResolveAssemblyReference.cache
-C:\Users\ptaszkie\Desktop\APOB-Proj\APOB\obj\Debug\APOB.Operations2point.resources
-C:\Users\ptaszkie\Desktop\APOB-Proj\APOB\obj\Debug\APOB.about.resources
-C:\Users\ptaszkie\Desktop\APOB-Proj\APOB\obj\Debug\APOB.WHistogram.resources
-C:\Users\ptaszkie\Desktop\APOB-Proj\APOB\obj\Debug\APOB.MainWindow.resources
-C:\Users\ptaszkie\Desktop\APOB-Proj\APOB\obj\Debug\APOB.Properties.Resources.resources
-C:\Users\ptaszkie\Desktop\APOB-Proj\APOB\obj\Debug\APOB.WImage.resources
-C:\Users\ptaszkie\Desktop\APOB-Proj\APOB\obj\Debug\APOB.csproj.GenerateResource.Cache
->>>>>>> FETCH_HEAD
