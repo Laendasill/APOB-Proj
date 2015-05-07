@@ -143,11 +143,12 @@ namespace APOB
 
         private void redukcjaPoziomówSzarościToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (this.ActiveMdiChild is hist)
+            if (this.ActiveMdiChild is WImage)
             {
-                hist a = (hist)this.ActiveMdiChild;
-
-                a.reductGrayScale();
+               
+                Posterize a = new Posterize( (WImage)this.ActiveMdiChild);
+                a.Show();
+                
             }
 
         }

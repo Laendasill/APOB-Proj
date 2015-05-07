@@ -272,7 +272,7 @@ namespace APOB
             target.pictureBox1.Image = EqImage;
             aktualizujHist();
         }
-        */
+       
         public void progowanie()
         {
             int width = target.pictureBox1.Image.Width;
@@ -295,6 +295,7 @@ namespace APOB
             target.pictureBox1.Image = EqImage;
             aktualizujHist();
         }
+        
         public void reductGrayScale()
         {
             int width = target.pictureBox1.Image.Width;
@@ -326,6 +327,7 @@ namespace APOB
             target.pictureBox1.Image = EqImage;
             aktualizujHist();
         }
+          */
         public void EqMy()
         {
             int width = target.pictureBox1.Image.Width;

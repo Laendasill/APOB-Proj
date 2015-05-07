@@ -88,6 +88,50 @@ namespace APOB
             this.pictureBox1.Image = image;
         }
 
+        public void reductGrayScale(int progs)
+        {
+            Bitmap image = new Bitmap(this.pictureBox1.Image);
+
+            Color c;
+            int col;
+            double[] prog = new double[progs+1];
+            double tmp = 255.0/progs;
+            prog[0] = 0;
+            for (int i = 1; i < prog.Length; i++)
+                prog[i] = prog[i - 1] + tmp;
+            
+            for (int x = 0; x < this.pictureBox1.Width - 1; x += 1)
+                for (int y = 0; y < this.pictureBox1.Height - 1; y += 1)
+                {
+                    c = image.GetPixel(x, y);
+                    for (int i = 1; i < prog.Length; i += 1)
+                    {
+                        if (c.G > prog[i])
+                        {
+                           // col = (int)prog[i - 1];
+                           // image.SetPixel(x, y, Color.FromArgb(col, col, col));
+                            continue;
+                        }
+                        else if (c.G == 255)
+                        {
+                            col = c.R;
+                            image.SetPixel(x, y, Color.FromArgb(col, col, col));
+                            break;
+                        }else 
+                        {
+                            col = (int)prog[i - 1];
+                            image.SetPixel(x, y, Color.FromArgb(col, col, col));
+                            break;
+                        }
+                       
+                        
+                    }
+
+                }
+            this.pictureBox1.Image = image;
+        }
+
+
 
         private void WImage_Load(object sender, EventArgs e)
         {

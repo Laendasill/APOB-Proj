@@ -26,6 +26,7 @@ namespace APOB
 
         private void Action_Click(object sender, EventArgs e)
         {
+            //this should be more generic 
             target.progowanie(int.Parse(ValueBox.Text));
             this.Close();
         }
