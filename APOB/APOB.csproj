@@ -71,11 +71,11 @@
     <Compile Include="about.Designer.cs">
       <DependentUpon>about.cs</DependentUpon>
     </Compile>
-    <Compile Include="hist.cs">
+    <Compile Include="WHistogram.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="hist.Designer.cs">
-      <DependentUpon>hist.cs</DependentUpon>
+    <Compile Include="WHistogram.Designer.cs">
+      <DependentUpon>WHistogram.cs</DependentUpon>
     </Compile>
     <Compile Include="Histogram.cs" />
     <Compile Include="MainWindow.cs">
@@ -98,8 +98,8 @@
     <EmbeddedResource Include="about.resx">
       <DependentUpon>about.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="hist.resx">
-      <DependentUpon>hist.cs</DependentUpon>
+    <EmbeddedResource Include="WHistogram.resx">
+      <DependentUpon>WHistogram.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
