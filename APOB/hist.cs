@@ -254,6 +254,7 @@ namespace APOB
         }
 
         // CW 2 progowania i takie tam sprawy
+        /* moved to WImage class
         public void negaion()
         {
             int width = target.pictureBox1.Image.Width;
@@ -271,7 +272,7 @@ namespace APOB
             target.pictureBox1.Image = EqImage;
             aktualizujHist();
         }
-
+        */
         public void progowanie()
         {
             int width = target.pictureBox1.Image.Width;

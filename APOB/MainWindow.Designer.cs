@@ -32,21 +32,21 @@
             this.plikToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.otwórzToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.obrazToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.duplikujToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.konwersjaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.skalaSzarościToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.negacjaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.progowanieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.redukcjaPoziomówSzarościToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.histogramToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.operacjeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wyrównajSąsiadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wyrównajtestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wrównajWłasnaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wyrównajLosowoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.konwersjaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.skalaSzarościToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.progowanieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.redukcjaPoziomówSzarościToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.operacjeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pomocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oProgramieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.duplikujToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.operacjeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.negacjaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,7 +77,7 @@
             // otwórzToolStripMenuItem
             // 
             this.otwórzToolStripMenuItem.Name = "otwórzToolStripMenuItem";
-            this.otwórzToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.otwórzToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.otwórzToolStripMenuItem.Text = "Otwórz";
             this.otwórzToolStripMenuItem.Click += new System.EventHandler(this.otwórzToolStripMenuItem_Click);
             // 
@@ -95,10 +95,57 @@
             this.obrazToolStripMenuItem.Text = "Obraz";
             this.obrazToolStripMenuItem.Click += new System.EventHandler(this.obrazToolStripMenuItem_Click);
             // 
+            // duplikujToolStripMenuItem
+            // 
+            this.duplikujToolStripMenuItem.Name = "duplikujToolStripMenuItem";
+            this.duplikujToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.duplikujToolStripMenuItem.Text = "Duplikuj";
+            this.duplikujToolStripMenuItem.Click += new System.EventHandler(this.duplikujToolStripMenuItem_Click);
+            // 
+            // konwersjaToolStripMenuItem
+            // 
+            this.konwersjaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.skalaSzarościToolStripMenuItem,
+            this.negacjaToolStripMenuItem,
+            this.progowanieToolStripMenuItem,
+            this.redukcjaPoziomówSzarościToolStripMenuItem});
+            this.konwersjaToolStripMenuItem.Name = "konwersjaToolStripMenuItem";
+            this.konwersjaToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.konwersjaToolStripMenuItem.Text = "Konwersja";
+            this.konwersjaToolStripMenuItem.Click += new System.EventHandler(this.operacjeToolStripMenuItem_Click);
+            // 
+            // skalaSzarościToolStripMenuItem
+            // 
+            this.skalaSzarościToolStripMenuItem.Name = "skalaSzarościToolStripMenuItem";
+            this.skalaSzarościToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
+            this.skalaSzarościToolStripMenuItem.Text = "Skala szarości";
+            this.skalaSzarościToolStripMenuItem.Click += new System.EventHandler(this.skalaSzarościToolStripMenuItem_Click);
+            // 
+            // negacjaToolStripMenuItem
+            // 
+            this.negacjaToolStripMenuItem.Name = "negacjaToolStripMenuItem";
+            this.negacjaToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
+            this.negacjaToolStripMenuItem.Text = "Negacja";
+            this.negacjaToolStripMenuItem.Click += new System.EventHandler(this.negacjaToolStripMenuItem_Click_1);
+            // 
+            // progowanieToolStripMenuItem
+            // 
+            this.progowanieToolStripMenuItem.Name = "progowanieToolStripMenuItem";
+            this.progowanieToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
+            this.progowanieToolStripMenuItem.Text = "Progowanie";
+            this.progowanieToolStripMenuItem.Click += new System.EventHandler(this.progowanieToolStripMenuItem_Click);
+            // 
+            // redukcjaPoziomówSzarościToolStripMenuItem
+            // 
+            this.redukcjaPoziomówSzarościToolStripMenuItem.Name = "redukcjaPoziomówSzarościToolStripMenuItem";
+            this.redukcjaPoziomówSzarościToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
+            this.redukcjaPoziomówSzarościToolStripMenuItem.Text = "Redukcja poziomów szarości";
+            this.redukcjaPoziomówSzarościToolStripMenuItem.Click += new System.EventHandler(this.redukcjaPoziomówSzarościToolStripMenuItem_Click);
+            // 
             // histogramToolStripMenuItem
             // 
             this.histogramToolStripMenuItem.Name = "histogramToolStripMenuItem";
-            this.histogramToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.histogramToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.histogramToolStripMenuItem.Text = "Histogram";
             this.histogramToolStripMenuItem.Click += new System.EventHandler(this.histogramToolStripMenuItem_Click);
             // 
@@ -137,38 +184,12 @@
             this.wyrównajLosowoToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.wyrównajLosowoToolStripMenuItem.Text = "Wyrównaj losowo";
             // 
-            // konwersjaToolStripMenuItem
+            // operacjeToolStripMenuItem1
             // 
-            this.konwersjaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.skalaSzarościToolStripMenuItem,
-            this.negacjaToolStripMenuItem,
-            this.progowanieToolStripMenuItem,
-            this.redukcjaPoziomówSzarościToolStripMenuItem});
-            this.konwersjaToolStripMenuItem.Name = "konwersjaToolStripMenuItem";
-            this.konwersjaToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
-            this.konwersjaToolStripMenuItem.Text = "Konwersja";
-            this.konwersjaToolStripMenuItem.Click += new System.EventHandler(this.operacjeToolStripMenuItem_Click);
-            // 
-            // skalaSzarościToolStripMenuItem
-            // 
-            this.skalaSzarościToolStripMenuItem.Name = "skalaSzarościToolStripMenuItem";
-            this.skalaSzarościToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
-            this.skalaSzarościToolStripMenuItem.Text = "Skala szarości";
-            this.skalaSzarościToolStripMenuItem.Click += new System.EventHandler(this.skalaSzarościToolStripMenuItem_Click);
-            // 
-            // progowanieToolStripMenuItem
-            // 
-            this.progowanieToolStripMenuItem.Name = "progowanieToolStripMenuItem";
-            this.progowanieToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
-            this.progowanieToolStripMenuItem.Text = "Progowanie";
-            this.progowanieToolStripMenuItem.Click += new System.EventHandler(this.progowanieToolStripMenuItem_Click);
-            // 
-            // redukcjaPoziomówSzarościToolStripMenuItem
-            // 
-            this.redukcjaPoziomówSzarościToolStripMenuItem.Name = "redukcjaPoziomówSzarościToolStripMenuItem";
-            this.redukcjaPoziomówSzarościToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
-            this.redukcjaPoziomówSzarościToolStripMenuItem.Text = "Redukcja poziomów szarości";
-            this.redukcjaPoziomówSzarościToolStripMenuItem.Click += new System.EventHandler(this.redukcjaPoziomówSzarościToolStripMenuItem_Click);
+            this.operacjeToolStripMenuItem1.Name = "operacjeToolStripMenuItem1";
+            this.operacjeToolStripMenuItem1.Size = new System.Drawing.Size(185, 22);
+            this.operacjeToolStripMenuItem1.Text = "Operacje 2pkt.";
+            this.operacjeToolStripMenuItem1.Click += new System.EventHandler(this.operacjeToolStripMenuItem1_Click);
             // 
             // pomocToolStripMenuItem
             // 
@@ -184,26 +205,6 @@
             this.oProgramieToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.oProgramieToolStripMenuItem.Text = "O programie";
             this.oProgramieToolStripMenuItem.Click += new System.EventHandler(this.oProgramieToolStripMenuItem_Click);
-            // 
-            // duplikujToolStripMenuItem
-            // 
-            this.duplikujToolStripMenuItem.Name = "duplikujToolStripMenuItem";
-            this.duplikujToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
-            this.duplikujToolStripMenuItem.Text = "Duplikuj";
-            this.duplikujToolStripMenuItem.Click += new System.EventHandler(this.duplikujToolStripMenuItem_Click);
-            // 
-            // operacjeToolStripMenuItem1
-            // 
-            this.operacjeToolStripMenuItem1.Name = "operacjeToolStripMenuItem1";
-            this.operacjeToolStripMenuItem1.Size = new System.Drawing.Size(185, 22);
-            this.operacjeToolStripMenuItem1.Text = "Operacje 2pkt.";
-            this.operacjeToolStripMenuItem1.Click += new System.EventHandler(this.operacjeToolStripMenuItem1_Click);
-            // 
-            // negacjaToolStripMenuItem
-            // 
-            this.negacjaToolStripMenuItem.Name = "negacjaToolStripMenuItem";
-            this.negacjaToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
-            this.negacjaToolStripMenuItem.Text = "Negacja";
             // 
             // MainWindow
             // 

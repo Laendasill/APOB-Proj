@@ -129,23 +129,11 @@ namespace APOB
 
         }
 
-        private void negacjaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (this.ActiveMdiChild is hist)
-            {
-                hist a = (hist)this.ActiveMdiChild;
-
-                a.negaion();
-            }
-
-        }
-
         private void progowanieToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (this.ActiveMdiChild is hist)
+            if (this.ActiveMdiChild is WImage)
             {
-                hist a = (hist)this.ActiveMdiChild;
-
+                WImage a = (WImage)this.ActiveMdiChild;
                 a.progowanie();
             }
 
@@ -181,6 +169,15 @@ namespace APOB
         {
             Operations2point w = new Operations2point(this);
             w.ShowDialog();
+        }
+
+        private void negacjaToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            if (this.ActiveMdiChild is WImage)
+            {
+                WImage a = (WImage)this.ActiveMdiChild;
+                a.negaion();
+            }
         }
     }
 }

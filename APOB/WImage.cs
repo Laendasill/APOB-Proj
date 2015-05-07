@@ -42,6 +42,46 @@ namespace APOB
             }
             this.pictureBox1.Image = image;
         }
+
+        public void negaion() // NOTE - function moved from hist.cs
+        {
+            Bitmap image = new Bitmap(this.pictureBox1.Image);
+         
+            Color c;
+
+            for (int x = 0; x < this.pictureBox1.Width - 1; x += 1)
+                for (int y = 0; y < this.pictureBox1.Height - 1; y += 1)
+                {
+                    c = image.GetPixel(x, y);
+
+                    image.SetPixel(x, y, Color.FromArgb(255 - c.R, 255 - c.R, 255 - c.R));
+                }
+            this.pictureBox1.Image = image;
+        }
+
+        public void progowanie()
+        {
+            Bitmap image = new Bitmap(this.pictureBox1.Image);
+           
+            int prog = 150;
+            Color c;
+            for (int x = 0; x < this.pictureBox1.Width - 1; x += 1)
+                for (int y = 0; y < this.pictureBox1.Height - 1; y += 1)
+                {
+                    c = image.GetPixel(x, y);
+                    if (c.R > prog)
+                    {
+                        image.SetPixel(x, y, Color.FromArgb(1, 1, 1));
+                    }
+                    if (c.R < prog)
+                    {
+                        image.SetPixel(x, y, Color.FromArgb(0, 0, 0));
+                    }
+                }
+            this.pictureBox1.Image = image;
+        }
+
+
         private void WImage_Load(object sender, EventArgs e)
         {
 
