@@ -83,3 +83,16 @@ D:\_profil_\Desktop\APOB-Proj-master\APOB\obj\Debug\APOB.Properties.Resources.re
 D:\_profil_\Desktop\APOB-Proj-master\APOB\obj\Debug\APOB.WImage.resources
 D:\_profil_\Desktop\APOB-Proj-master\APOB\obj\Debug\APOB.csproj.GenerateResource.Cache
 D:\_profil_\Desktop\APOB-Proj-master\APOB\obj\Debug\APOB.Operations2point.resources
+D:\Inne\Csharp\APOB-Proj\APOB\bin\Debug\APOB.exe.config
+D:\Inne\Csharp\APOB-Proj\APOB\obj\Debug\APOB.exe
+D:\Inne\Csharp\APOB-Proj\APOB\obj\Debug\APOB.pdb
+D:\Inne\Csharp\APOB-Proj\APOB\bin\Debug\APOB.exe
+D:\Inne\Csharp\APOB-Proj\APOB\bin\Debug\APOB.pdb
+D:\Inne\Csharp\APOB-Proj\APOB\obj\Debug\APOB.csprojResolveAssemblyReference.cache
+D:\Inne\Csharp\APOB-Proj\APOB\obj\Debug\APOB.Operations2point.resources
+D:\Inne\Csharp\APOB-Proj\APOB\obj\Debug\APOB.about.resources
+D:\Inne\Csharp\APOB-Proj\APOB\obj\Debug\APOB.hist.resources
+D:\Inne\Csharp\APOB-Proj\APOB\obj\Debug\APOB.MainWindow.resources
+D:\Inne\Csharp\APOB-Proj\APOB\obj\Debug\APOB.Properties.Resources.resources
+D:\Inne\Csharp\APOB-Proj\APOB\obj\Debug\APOB.WImage.resources
+D:\Inne\Csharp\APOB-Proj\APOB\obj\Debug\APOB.csproj.GenerateResource.Cache
