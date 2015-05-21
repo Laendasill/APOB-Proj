@@ -71,6 +71,18 @@
     <Compile Include="about.Designer.cs">
       <DependentUpon>about.cs</DependentUpon>
     </Compile>
+    <Compile Include="Slider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Slider.Designer.cs">
+      <DependentUpon>Slider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="treshold.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="treshold.Designer.cs">
+      <DependentUpon>treshold.cs</DependentUpon>
+    </Compile>
     <Compile Include="WHistogram.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +109,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="about.resx">
       <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Slider.resx">
+      <DependentUpon>Slider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="treshold.resx">
+      <DependentUpon>treshold.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WHistogram.resx">
       <DependentUpon>WHistogram.cs</DependentUpon>

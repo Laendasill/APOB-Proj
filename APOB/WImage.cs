@@ -233,5 +233,68 @@ namespace APOB
             //    }
             //target.pictureBox1.Image = OpeImage;
         }
+        public void reductGrayScale( int progs )
+        {
+            Bitmap img = new Bitmap(IBox.Image);
+            //int width = target.ImageBox.Image.Width;
+            //int height = target.ImageBox.Image.Height;
+            //Bitmap EqImage = new Bitmap(width, height);
+            //Bitmap Obraz = new Bitmap(target.ImageBox.Image);
+            Color c;
+            int col;
+            double[] prog = new double[progs+1];
+            double temp = 255.0 / progs;
+            prog[0] = 0.0;
+            for (int i = 1; i < prog.Length; ++i)
+                prog[i] = prog[i - 1] + temp;
+
+            for (int x = 0; x < IWidth - 1; x += 1)
+                for (int y = 0; y < IHeight - 1; y += 1)
+                {
+                    c = img.GetPixel(x, y);
+                    for (int i = 1; i < prog.Length; i += 1)
+                    {
+                        if (c.B > prog[i])
+                        {
+                            continue;
+                        }
+                        else if (c.B == 255)
+                        {
+                            col = 255;
+                            img.SetPixel(x, y, Color.FromArgb(col, col, col));
+                            break;
+                        }
+                        else
+                        {
+                            col = (int)prog[i - 1];
+                            img.SetPixel(x, y, Color.FromArgb(col, col, col));
+                            break;
+                        }
+                    }
+
+                }
+            IBox.Image = img;
+        }
+        public void progowanie(int h1, int h2)
+        {
+            Bitmap img = new Bitmap(IBox.Image);
+            int prog = h1;
+            int endprog = h2;
+            Color c;
+            for (int x = 0; x < IWidth - 1; x += 1)
+                for (int y = 0; y < IHeight - 1; y += 1)
+                {
+                    c = img.GetPixel(x, y);
+                    if (c.R > endprog)
+                    {
+                        img.SetPixel(x, y, Color.FromArgb(1, 1, 1));
+                    }
+                    if (c.R < prog)
+                    {
+                        img.SetPixel(x, y, Color.FromArgb(0, 0, 0));
+                    }
+                }
+            IBox.Image = img;
+        }
     }
 }

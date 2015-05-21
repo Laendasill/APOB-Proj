@@ -97,22 +97,22 @@ namespace APOB
 
         private void progowanieToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (this.ActiveMdiChild is WHistogram)
+            if (this.ActiveMdiChild is WImage)
             {
-                WHistogram a = (WHistogram)this.ActiveMdiChild;
+                treshold a = new treshold((WImage)this.ActiveMdiChild);
 
-                a.progowanie();
+                a.Show();
             }
 
         }
 
         private void redukcjaPoziomówSzarościToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (this.ActiveMdiChild is WHistogram)
+            if (this.ActiveMdiChild is WImage)
             {
-                WHistogram a = (WHistogram)this.ActiveMdiChild;
+                Slider a = new Slider((WImage)this.ActiveMdiChild);
 
-                a.reductGrayScale();
+                a.Show();
             }
 
         }
